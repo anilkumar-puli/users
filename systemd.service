@@ -1,1 +1,13 @@
 
+[Unit]
+Description=user Service
+
+[Service]
+User=root
+Environment=CART_ENDPOINT=CARTENDPOINT:8080
+Environment=DB_HOST=DBHOST
+ExecStart=/bin/java -jar /home/ubuntu/user/user.jar
+SyslogIdentifier=user
+
+[Install]
+WantedBy=multi-user.target
