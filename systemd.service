@@ -6,7 +6,7 @@ Description=user Service
 User=root
 Environment=CART_ENDPOINT=CARTENDPOINT:8080
 Environment=DB_HOST=DBHOST
-ExecStart=/bin/java -jar /home/ubuntu/user/user.jar
+ExecStart=/bin/java -jar /home/ubuntu/users/users.jar
 SyslogIdentifier=user
 
 [Install]
