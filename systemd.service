@@ -1,12 +1,11 @@
-
 [Unit]
-Description=user Service
+Description=user service
 
 [Service]
-User=root
-Environment=CART_ENDPOINT=CARTENDPOINT:8080
-Environment=DB_HOST=DBHOST
-ExecStart=/bin/java -jar /home/ubuntu/users/users.jar
+
+Environment=AUTH_API_PORT=8080
+ExecStart=/bin/java -jar /home/ubuntu/users/users.jar 
+
 SyslogIdentifier=user
 
 [Install]
